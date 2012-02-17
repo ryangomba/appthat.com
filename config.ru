@@ -1,15 +1,9 @@
-use Rack::Static, 
-  :urls => ["/stylesheets", "/images"],
-  :root => "public",
-  :try => [".html"]
+require 'rack'
+require 'rack/contrib/try_static'
 
-run lambda { |env|
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    File.open('public/index.html', File::RDONLY)
-  ]
-}
+use ::Rack::TryStatic, 
+  :root => "html",     # where middleman files are generated
+  :urls => %w[/]            # match all requests
+  :try => ['.html', 'index.html', '/index.html'] # try these postfixes sequentially
+# 404
+run lambda { [404, {'Content-Type' => 'text/plain'}, [' File not found.']]}
