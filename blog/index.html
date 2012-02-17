@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Blog - AppThat</title>
+	<link rel="stylesheet" href="/main.css" type="text/css" />
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23426287-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+</head>
+<body class="blog">
+	<div id="container">
+		<div id="header">
+			<a href="/"><img src="/logo.png" /></a>
+			<ul>
+				<li><a href="/support/">Support</a></li>
+				<li><a class="current" href="/blog/">Blog</a></li>
+				<li><a href="/">About</a></li>
+				<li><a href="/shine/">Shine</a></li>
+			</ul>
+		</div>
+		
+		<div id="content" class="blog">
+		
+		    <div class="post">
+		    	<div class="date">July 2, 2011</div>
+		    	<div class="text">
+		    		<h2>International Bug Fix for Shine</h2>
+		    		<p>Shine user experiencing frequent crashes should try the following:</p>
+		    		<p>Navigate to Settings -> General -> International -> Region Format. Change your region format temporarily, then switch back. Shine should no longer crash.</p>					
+		    		<p>This seems to be a funky bug that only affects a small number of users, mostly in the UK. We can't reproduce the issue on our end, but will try to isolate the issue and submit a fix soon.</p>
+		    	</div>
+		    </div>
+		    
+		    
+			<div class="post">
+				<div class="date">May 27, 2011</div>
+				<div class="text">
+					<h2>Shine 1.2 Submitted to the App Store</h2>
+					<p>This update fixes a number of bugs:</p>
+					<ol>
+						<li>Forecast icons occasionally contradicted precipitation numbers.</li>
+						<li>Days periodically showed up out of order.</li>
+						<li>Shine crashed on startup for a small subset of users.</li>
+					</ol>					
+					<p>All fixed.</p>
+				</div>
+			</div>
+			
+			<div class="post">
+				<div class="date">May 23, 2011</div>
+				<div class="text">
+					<h2>The Silliest Little Bug</h2>
+					<p>Anyone noticed that Shine is a bit of an optimist? No? Good. Stop reading.</p>
+					<p>But for those of you who might've wondered why Shine is predicting endless sun on gloomy, cloud-filled days, it's because we here at AppThat really goofed... we just discovered the silliest little bug! Our weather conditions algorithm is currently using wind speed values for cloud cover. Sigh.</p>
+					<p>We've fixed the issue in 1.1; until then, enjoy the (virtual) sun! :)</p> 
+				</div>
+			</div>
+			
+			<div class="post">
+				<div class="date">May 18, 2011</div>
+				<div class="text">
+					<h2>Shine 1.1 Will Be Even Better</h2>
+					<p>Instead of sitting on features and waiting around for Apple to approve Shine 1.1, we decided to resubmit our binary and give our fine users an even slicker update. In addition to those items listed in the previous post, here's what's new:</p>
+					<p>LOCATION NAMES<br/>
+					Shine 1.0 assigned names to locations based on metropolitan area. Hence places like Canton, MA were labeled as Boston, MA even though weather data would come from a Canton weather station. Shine 1.1 improves location nomenclature dramatically.</p>
+					<p>INTERFACE<br/>
+					Automatically return to the weather view after a location change<br/>
+					Metric wind speed is now displayed as km/h<br/>
+					Settings icon has been standardized<br/>
+					Improved error alerts<br/>
+					New app icon</p>
+					<p>*** A note about international support: Currently, Shine gathers extended weather data from the National Weather Service (US only). However, we plan to introduce full international support within the next few weeks. Stay tuned!</p>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="date">May 15, 2011</div>
+				<div class="text">
+					<h2>Shine 1.1 Submitted to the App Store</h2>
+					<p>We've submitted Shine 1.1 to the App Store! This is an update intended to address small bugs and user nits. Stay tuned for feature additions; they're near on the horizon. Here's what's new:</p>
+					<p>LOCATION SWITCHING<br/>
+					Arrows on location bar now act as buttons<br/>
+					Switch between locations without delay</p>
+					
+					<p>INTERFACE<br/>
+					Dorky "TOMORW" handle has been replaced with the actual day name<br/>
+					Tapping the status bar now scrolls to top</p>
+					
+					<p>LOCATION SERVICES<br/>
+					"Current Location" is now disabled when location services are off</p>
+					
+					<p>BUG SQUASHES<br/>
+					Error message will not display after a good request</p>
+					
+					<p>------------------------------</p>
+					
+					<p>PLANNED<br/>
+					Every-hour forecasts<br/>
+					Severe weather warnings<br/>
+					Full international support</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
